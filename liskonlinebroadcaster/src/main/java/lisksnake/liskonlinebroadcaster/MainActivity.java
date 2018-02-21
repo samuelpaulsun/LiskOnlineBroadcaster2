@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     CameraSource cameraSource;
     ToneGenerator toneG;
     String strTransaction;
-    String strNetHash = "da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba";
-    String strURL = "https://testnet.lisk.io/peer/transactions";
+    String strNetHash = "cba57b868c8571599ad594c6607a77cad60cf0372ecde803004d87e679117c12";
+    String strURL = "https://wallet.testnet.shiftnrg.org/peer/transactions";
     URL urlNetLink;
     Spinner spinnerLiskNet;
     EditText textCustomNode;
@@ -238,20 +238,20 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 //break;
                 case 1:         // TEST NET selected
-                    strNetHash = "da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba";
-                    strURL = "https://testnet.lisk.io/peer/transactions";
+                    strNetHash = "cba57b868c8571599ad594c6607a77cad60cf0372ecde803004d87e679117c12";
+                    strURL = "https://wallet.testnet.shiftnrg.org/peer/transactions";
                     break;
                 case 2:         // MAIN NET selected
-                    strNetHash = "ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511";
-                    strURL = "https://node01.lisk.io/peer/transactions";
+                    strNetHash = "7337a324ef27e1e234d1e9018cacff7d4f299a09c2df9be460543b8f7ef652f1";
+                    strURL = "https://wallet.shiftnrg.org/peer/transactions";
                     break;
                 case 3:         // CUSTOM NODE selected
-                    strNetHash = "ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511";
+                    strNetHash = "7337a324ef27e1e234d1e9018cacff7d4f299a09c2df9be460543b8f7ef652f1";
                     strURL = String.valueOf(textCustomNode.getText()) + "/peer/transactions";
                     break;
                 default:
-                    strNetHash = "da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba";
-                    strURL = "https://testnet.lisk.io/peer/transactions";
+                    strNetHash = "cba57b868c8571599ad594c6607a77cad60cf0372ecde803004d87e679117c12";
+                    strURL = "https://wallet.testnet.shiftnrg.org/peer/transactions";
                     break;
             }
 
@@ -292,8 +292,8 @@ public class MainActivity extends AppCompatActivity {
 
                 conn.setRequestProperty("Content-Type", "application/json");
                 conn.setRequestProperty("os", "linux4.4.0-78-generic");
-                conn.setRequestProperty("version", "0.9.9");
-                conn.setRequestProperty("port", "1");
+                conn.setRequestProperty("version", "6.7.0");
+                conn.setRequestProperty("port", "9306");
                 conn.setRequestProperty("nethash", strNetHash);
 
                 conn.setDoInput(true);
