@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
             try{
 
                 //URL urlNetLink = new URL("https://testnet.lisk.io/peer/transactions");
-                //String trans = "{\"transaction\":{\"type\":0,\"amount\":10000000,\"fee\":10000000,\"recipientId\":\"1541786588265098370L\",\"timestamp\":44505392,\"asset\":{},\"senderPublicKey\":\"23be4e11ddcb6bf6d18ad2e4de1141b0ea2b08625767a20ade249b4117276b5f\",\"signature\":\"5c0a40ecb723fecbc2eceb64ac6489a63bbbcb6da59e3dd36de224ee240108f54601a9d725e76a906b5e54a33cd3910d8abb6c251a22ade3fea68d8e757a3e0e\",\"signSignature\":\"b9081c128ddc3453efd9820797f91ba67fc29367bb22cde90b7795e215ff0bcbd0b77e36e88217996e35640accdcd18cddf1137ae9bdc2d0c0353d0bf490870f\",\"id\":\"5630001309045380353\"}}";
+                //String trans = "{\"transaction\":{\"type\":0,\"amount\":10000000,\"fee\":1000000,\"recipientId\":\"1541786588265098370L\",\"timestamp\":44505392,\"asset\":{},\"senderPublicKey\":\"23be4e11ddcb6bf6d18ad2e4de1141b0ea2b08625767a20ade249b4117276b5f\",\"signature\":\"5c0a40ecb723fecbc2eceb64ac6489a63bbbcb6da59e3dd36de224ee240108f54601a9d725e76a906b5e54a33cd3910d8abb6c251a22ade3fea68d8e757a3e0e\",\"signSignature\":\"b9081c128ddc3453efd9820797f91ba67fc29367bb22cde90b7795e215ff0bcbd0b77e36e88217996e35640accdcd18cddf1137ae9bdc2d0c0353d0bf490870f\",\"id\":\"5630001309045380353\"}}";
                 String trans = strTransaction;
                 strTransaction = "";
                 JSONObject postDataParams;
